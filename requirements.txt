@@ -1,0 +1,23 @@
+# Dependencias de osint-recon
+# Instalar con:  pip install -r requirements.txt
+
+requests>=2.28          # peticiones HTTP (usernames, headers, HIBP, XposedOrNot)
+dnspython>=2.3          # resolución DNS (módulo domain)
+python-whois>=0.8       # consultas WHOIS (módulo domain)
+phonenumbers>=8.13      # validación y perfilado de teléfonos (módulo phone)
+piexif>=1.1             # lectura de metadatos EXIF/GPS de fotos (módulo exif)
+jinja2>=3.1             # plantillas del reporte HTML
+flask>=2.2              # interfaz web opcional
+
+# Nota: el mapa usa Leaflet + OpenStreetMap vía CDN (no requiere paquete Python).
+# La geocodificación (módulo geocode) usa Nominatim/OSM, gratis y sin clave.
+
+# --- Herramientas externas opcionales (módulo external_tools) ---
+# Se detectan solas si están instaladas. Instálalas aisladas con pipx
+# (con 'pip install' directo suelen fallar en CachyOS/Kali):
+#   pipx install theHarvester
+#   pipx install holehe
+#
+# --- Programas del sistema ---
+#   Graphviz ('dot'), para el grafo:   pacman -S graphviz | apt install graphviz | brew install graphviz
+#   Chromium/Chrome, para --pdf:       pacman -S chromium | apt install chromium

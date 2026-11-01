@@ -1,0 +1,5 @@
+# Dependencias solo para desarrollo / tests.
+# Instalar con:  pip install -r requirements-dev.txt
+-r requirements.txt
+pytest>=7.0
+Pillow>=9.0        # para generar imágenes de prueba con EXIF en los tests

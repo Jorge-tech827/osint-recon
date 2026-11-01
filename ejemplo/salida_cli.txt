@@ -1,0 +1,58 @@
+$ python3 osint.py --name "Mateo Rivas Olmedo" --email mateo.rivas@rivas-fotografia.example --username mateorivas --phone "+34 612 34 56 78" --domain rivas-fotografia.example --image ejemplo/foto_ejemplo.jpg --last-seen "Estación de Atocha, Madrid" --last-seen-date 2026-10-18 --age 34 --nationality ES --sex M --output-dir ejemplo --outfile informe_ejemplo --pdf -y
+
+  ___  ____ ___ _   _ _____    ____  _____ ____ ___  _   _
+ / _ \/ ___|_ _| \ | |_   _|  |  _ \| ____/ ___/ _ \| \ | |
+| | | \___ \| ||  \| | | |    | |_) |  _|| |  | | | |  \| |
+| |_| |___) | || |\  | | |    |  _ <| |__| |__| |_| | |\  |
+ \___/|____/___|_| \_| |_|    |_| \_\_____\____\___/|_| \_|
+          recolección OSINT modular · v1.0.0
+
+AVISO: úsalo solo sobre objetivos para los que tengas autorización explícita.
+El uso contra terceros sin permiso puede ser ilegal (RGPD / leyes locales).
+
+[*] Objetivos: ['Mateo Rivas Olmedo', 'mateo.rivas@rivas-fotografia.example', 'mateorivas', '+34 612 34 56 78', 'rivas-fotografia.example', 'ejemplo/foto_ejemplo.jpg', 'Estación de Atocha, Madrid']
+[*] Módulos: ['breaches', 'breaches_free', 'domain', 'exif', 'external_tools', 'geocode', 'interpol', 'missing_db', 'news', 'permutations', 'phone', 'reverse_image', 'usernames']
+[*] Reportes se guardarán como: informe_ejemplo.*
+[INFO] osint: Ejecutando módulo 'interpol' sobre person=Mateo Rivas Olmedo
+[INFO] osint: Ejecutando módulo 'missing_db' sobre person=Mateo Rivas Olmedo
+[INFO] osint: Ejecutando módulo 'news' sobre person=Mateo Rivas Olmedo
+[INFO] osint: Ejecutando módulo 'permutations' sobre person=Mateo Rivas Olmedo
+[INFO] osint: Ejecutando módulo 'usernames' sobre person=Mateo Rivas Olmedo
+[INFO] osint: Ejecutando módulo 'breaches' sobre email=mateo.rivas@rivas-fotografia.example
+[INFO] osint: Ejecutando módulo 'breaches_free' sobre email=mateo.rivas@rivas-fotografia.example
+[INFO] osint: Ejecutando módulo 'domain' sobre email=mateo.rivas@rivas-fotografia.example
+[INFO] osint: Ejecutando módulo 'external_tools' sobre email=mateo.rivas@rivas-fotografia.example
+[INFO] osint: Ejecutando módulo 'usernames' sobre email=mateo.rivas@rivas-fotografia.example
+[INFO] osint: Ejecutando módulo 'usernames' sobre username=mateorivas
+[INFO] osint: Ejecutando módulo 'phone' sobre phone=+34 612 34 56 78
+[INFO] osint: Ejecutando módulo 'domain' sobre domain=rivas-fotografia.example
+[INFO] osint: Ejecutando módulo 'external_tools' sobre domain=rivas-fotografia.example
+[INFO] osint: Ejecutando módulo 'exif' sobre image=ejemplo/foto_ejemplo.jpg
+[INFO] osint: Ejecutando módulo 'reverse_image' sobre image=ejemplo/foto_ejemplo.jpg
+[INFO] osint: Ejecutando módulo 'geocode' sobre place=Estación de Atocha, Madrid
+[*] Grafo: DOT=ejemplo/informe_ejemplo_grafo.dot PNG=ejemplo/informe_ejemplo_grafo.png GraphML=ejemplo/informe_ejemplo_grafo.graphml
+[*] Reporte JSON: ejemplo/informe_ejemplo.json
+[*] Mapa de ubicaciones: ejemplo/informe_ejemplo_mapa.html (2 punto/s)
+[*] Línea de tiempo: 5 evento/s
+[*] Reporte HTML: ejemplo/informe_ejemplo.html
+[*] Reporte PDF: ejemplo/informe_ejemplo.pdf
+
+=== RESUMEN ===
+  Entidades: 43 | Relaciones: 53
+  [           ok] interpol        1 coincidencia(s) por NOMBRE en Interpol — verificar identidad (posibles homónimos).
+  [           ok] missing_db      5 bases de desaparecidos enlazadas para «Mateo Rivas Olmedo». Interpol se consulta aparte (módulo interpol).
+  [           ok] news            3 noticia(s) encontradas para «Mateo Rivas Olmedo» — verificar que son la misma persona.
+  [           ok] permutations    11 emails comprobados, 1 con brechas (= emails reales probables).
+  [           ok] usernames       5 perfil(es) encontrados; 0 comprobaciones ambiguas.
+  [      skipped] breaches        No hay clave HIBP configurada. Añade tu clave en config.ini ([api_keys] hibp=...). Consíguela en https://haveibeenpwned.com/API/Key
+  [           ok] breaches_free   2 brecha(s) encontradas (XposedOrNot, gratis).
+  [           ok] domain          Dominio rivas-fotografia.example analizado (WHOIS/DNS/HTTP).
+  [           ok] external_tools  theHarvester: ok — theHarvester: 2 emails, 2 hosts, 1 IPs. | holehe: ok — holehe: 3 servicio(s) con cuenta asociada.
+  [           ok] usernames       0 perfil(es) encontrados; 0 comprobaciones ambiguas.
+  [           ok] usernames       5 perfil(es) encontrados; 0 comprobaciones ambiguas.
+  [           ok] phone           España · móvil · Syma · +34612345678
+  [           ok] domain          Dominio rivas-fotografia.example analizado (WHOIS/DNS/HTTP).
+  [           ok] external_tools  theHarvester: ok — theHarvester: 2 emails, 2 hosts, 1 IPs.
+  [           ok] exif            EXIF con GPS: 40.413, -3.681 · 2026:10:20 18:30:45
+  [           ok] reverse_image   Fichero local (SHA-256 4c61f3fbea72240c…). Súbelo manualmente a los motores enlazados (sin URL pública no se puede enlazar la búsqueda directa).
+  [           ok] geocode         «Estación de Atocha, Madrid» → 40.4066, -3.6893

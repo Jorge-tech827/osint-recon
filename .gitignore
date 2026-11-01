@@ -1,0 +1,12 @@
+# Entorno virtual y cachés de Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Configuración local (puede contener claves de API)
+config.ini
+
+# Resultados de tus propias ejecuciones (el ejemplo de entrega está en ejemplo/)
+salidas/

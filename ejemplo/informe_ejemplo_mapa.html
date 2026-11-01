@@ -1,0 +1,34 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa OSINT: Mateo Rivas Olmedo, mateo.rivas@rivas-fotografia.example, mateorivas, +34 612 34 56 78, rivas-fotografia.example, ejemplo/foto_ejemplo.jpg, Estación de Atocha, Madrid</title><style>html,body{margin:0}</style></head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<div id="mapa_full" style="height:60vh;border-radius:12px;overflow:hidden;"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function(){
+  var pts = [{"lat": 40.413, "lon": -3.681, "label": "\ud83d\udccd Foto: 40.41300, -3.68100", "origen": "EXIF de foto", "fecha": "2026:10:20 18:30:45"}, {"lat": 40.4066, "lon": -3.6893, "label": "\ud83d\udccd \u00daltima vez visto: Estaci\u00f3n de Atocha, Madrid", "origen": "\u00daltima vez visto", "fecha": "2026-10-18"}];
+  var map = L.map("mapa_full");
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19, attribution: "© OpenStreetMap"
+  }).addTo(map);
+  var group = [];
+  pts.forEach(function(p){
+    var m = L.marker([p.lat, p.lon]).addTo(map);
+    var html = "<b>"+p.label+"</b>";
+    if(p.origen) html += "<br>"+p.origen;
+    if(p.fecha)  html += "<br>"+p.fecha;
+    html += "<br><a href='https://www.openstreetmap.org/?mlat="+p.lat+"&mlon="+p.lon+
+            "' target='_blank'>Ver en OSM</a>";
+    m.bindPopup(html);
+    group.push([p.lat, p.lon]);
+  });
+  if(group.length === 1) map.setView(group[0], 15);
+  else map.fitBounds(group, {padding:[40,40]});
+})();
+</script>
+<p style="font-family:sans-serif;color:#657a7f;font-size:13px;padding:0 14px">
+Si el mapa sale en gris es que el navegador bloqueó las teselas (pasa al abrir el
+fichero directamente). Usa los enlaces de abajo:</p>
+<div style="font-family:sans-serif;padding:14px;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))"><div style="border:1px solid #d3dfe0;border-radius:10px;padding:10px 12px"><b>📍 Foto: 40.41300, -3.68100</b><br><span style="font-family:monospace;color:#0f766e">40.41300, -3.68100</span><br><span style="color:#657a7f;font-size:13px">EXIF de foto · 2026:10:20 18:30:45</span><br><a href="https://www.openstreetmap.org/?mlat=40.413&mlon=-3.681#map=15/40.413/-3.681" target="_blank">OpenStreetMap ↗</a> · <a href="https://www.google.com/maps?q=40.413,-3.681" target="_blank">Google Maps ↗</a></div><div style="border:1px solid #d3dfe0;border-radius:10px;padding:10px 12px"><b>📍 Última vez visto: Estación de Atocha, Madrid</b><br><span style="font-family:monospace;color:#0f766e">40.40660, -3.68930</span><br><span style="color:#657a7f;font-size:13px">Última vez visto · 2026-10-18</span><br><a href="https://www.openstreetmap.org/?mlat=40.4066&mlon=-3.6893#map=15/40.4066/-3.6893" target="_blank">OpenStreetMap ↗</a> · <a href="https://www.google.com/maps?q=40.4066,-3.6893" target="_blank">Google Maps ↗</a></div></div>
+</body></html>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <key id="type" for="node" attr.name="type" attr.type="string"/>
+  <key id="value" for="node" attr.name="value" attr.type="string"/>
+  <key id="sources" for="node" attr.name="sources" attr.type="string"/>
+  <key id="rel" for="edge" attr.name="rel" attr.type="string"/>
+  <graph edgedefault="directed">
+    <node id="n_fbe825c0f654"><data key="label">Mateo Rivas Olmedo</data><data key="type">person</data><data key="value">Mateo Rivas Olmedo</data><data key="sources">input</data></node>
+    <node id="n_bf1483315106"><data key="label">mateo.rivas@rivas-fotografia.example</data><data key="type">email</data><data key="value">mateo.rivas@rivas-fotografia.example</data><data key="sources">input, theHarvester, holehe</data></node>
+    <node id="n_6b04141147af"><data key="label">mateorivas</data><data key="type">username</data><data key="value">mateorivas</data><data key="sources">input, usernames</data></node>
+    <node id="n_81c0706e4b6e"><data key="label">+34 612 34 56 78</data><data key="type">phone</data><data key="value">+34 612 34 56 78</data><data key="sources">input, phone</data></node>
+    <node id="n_db527ecc595e"><data key="label">rivas-fotografia.example</data><data key="type">domain</data><data key="value">rivas-fotografia.example</data><data key="sources">input, domain, theHarvester</data></node>
+    <node id="n_d3efb1079893"><data key="label">Foto: foto_ejemplo.jpg</data><data key="type">image</data><data key="value">ejemplo/foto_ejemplo.jpg</data><data key="sources">input, exif, reverse_image</data></node>
+    <node id="n_2f07a85edbaf"><data key="label">Estación de Atocha, Madrid</data><data key="type">place</data><data key="value">Estación de Atocha, Madrid</data><data key="sources">input</data></node>
+    <node id="n_db43c03befd9"><data key="label">Interpol Yellow Notice: MATEO RIVAS OLMEDO</data><data key="type">notice</data><data key="value">interpol:yellow:2026/00001</data><data key="sources">interpol</data></node>
+    <node id="n_e7b9fe295005"><data key="label">La familia de Mateo Rivas pide ayuda para encontrarle - Diar…</data><data key="type">news</data><data key="value">https://news.example/articulo/familia-pide-ayuda</data><data key="sources">news</data></node>
+    <node id="n_281cd389c4b5"><data key="label">Vecinos de Atocha organizan una batida de búsqueda - Noticia…</data><data key="type">news</data><data key="value">https://news.example/articulo/batida-atocha</data><data key="sources">news</data></node>
+    <node id="n_2d23c1d6bc68"><data key="label">Siguen sin pistas sobre el paradero de Mateo Rivas - Crónica…</data><data key="type">news</data><data key="value">https://news.example/articulo/sin-pistas</data><data key="sources">news</data></node>
+    <node id="n_4257f65fa782"><data key="label">mrivas@rivas-fotografia.example</data><data key="type">email</data><data key="value">mrivas@rivas-fotografia.example</data><data key="sources">permutations</data></node>
+    <node id="n_25a981980f1f"><data key="label">Brecha: ForoFotografiaDemo</data><data key="type">breach</data><data key="value">ForoFotografiaDemo</data><data key="sources">permutations, breaches_free</data></node>
+    <node id="n_04e804afe550"><data key="label">Keybase: mateorivas</data><data key="type">social_profile</data><data key="value">https://keybase.io/mateorivas</data><data key="sources">usernames</data></node>
+    <node id="n_a95f0e625c1f"><data key="label">GitHub: mateorivas</data><data key="type">social_profile</data><data key="value">https://github.com/mateorivas</data><data key="sources">usernames</data></node>
+    <node id="n_637a8e940987"><data key="label">Twitch: mateorivas</data><data key="type">social_profile</data><data key="value">https://www.twitch.tv/mateorivas</data><data key="sources">usernames</data></node>
+    <node id="n_6acaff79c01b"><data key="label">Reddit: mateorivas</data><data key="type">social_profile</data><data key="value">https://www.reddit.com/user/mateorivas/about.json</data><data key="sources">usernames</data></node>
+    <node id="n_59f838095f84"><data key="label">Chess.com: mateorivas</data><data key="type">social_profile</data><data key="value">https://www.chess.com/member/mateorivas</data><data key="sources">usernames</data></node>
+    <node id="n_7cd725623517"><data key="label">mateo.rivas</data><data key="type">username</data><data key="value">mateo.rivas</data><data key="sources">usernames</data></node>
+    <node id="n_53a1ad3d2512"><data key="label">mrivas</data><data key="type">username</data><data key="value">mrivas</data><data key="sources">usernames</data></node>
+    <node id="n_f70a47f5fadc"><data key="label">mateo_rivas</data><data key="type">username</data><data key="value">mateo_rivas</data><data key="sources">usernames</data></node>
+    <node id="n_4a7e312c4a22"><data key="label">mateor</data><data key="type">username</data><data key="value">mateor</data><data key="sources">usernames</data></node>
+    <node id="n_21e786e29169"><data key="label">rivasmateo</data><data key="type">username</data><data key="value">rivasmateo</data><data key="sources">usernames</data></node>
+    <node id="n_1518caf46c89"><data key="label">mateoolmedo</data><data key="type">username</data><data key="value">mateoolmedo</data><data key="sources">usernames</data></node>
+    <node id="n_cd387126efb0"><data key="label">mateo.olmedo</data><data key="type">username</data><data key="value">mateo.olmedo</data><data key="sources">usernames</data></node>
+    <node id="n_6b6d115db974"><data key="label">molmedo</data><data key="type">username</data><data key="value">molmedo</data><data key="sources">usernames</data></node>
+    <node id="n_b5fbf95dd30e"><data key="label">mrivaso</data><data key="type">username</data><data key="value">mrivaso</data><data key="sources">usernames</data></node>
+    <node id="n_5e821ee242a4"><data key="label">Brecha: TiendaOnlineDemo</data><data key="type">breach</data><data key="value">TiendaOnlineDemo</data><data key="sources">breaches_free</data></node>
+    <node id="n_de33d3e7726a"><data key="label">Rivas Fotografía (ficticio)</data><data key="type">organization</data><data key="value">Rivas Fotografía (ficticio)</data><data key="sources">domain</data></node>
+    <node id="n_78bb939b9e07"><data key="label">admin@rivas-fotografia.example</data><data key="type">email</data><data key="value">admin@rivas-fotografia.example</data><data key="sources">domain</data></node>
+    <node id="n_f14b615dd3b5"><data key="label">192.0.2.10</data><data key="type">ip</data><data key="value">192.0.2.10</data><data key="sources">domain, theHarvester</data></node>
+    <node id="n_aae5175a9aa5"><data key="label">mx1.rivas-fotografia.example</data><data key="type">host</data><data key="value">mx1.rivas-fotografia.example</data><data key="sources">domain</data></node>
+    <node id="n_f9efdd514951"><data key="label">ns1.dns-ficticio.example</data><data key="type">host</data><data key="value">ns1.dns-ficticio.example</data><data key="sources">domain</data></node>
+    <node id="n_4daf8c0f40d2"><data key="label">ns2.dns-ficticio.example</data><data key="type">host</data><data key="value">ns2.dns-ficticio.example</data><data key="sources">domain</data></node>
+    <node id="n_6b922e5ed939"><data key="label">contacto@rivas-fotografia.example</data><data key="type">email</data><data key="value">contacto@rivas-fotografia.example</data><data key="sources">theHarvester</data></node>
+    <node id="n_a94b6a2002ad"><data key="label">www.rivas-fotografia.example</data><data key="type">host</data><data key="value">www.rivas-fotografia.example</data><data key="sources">theHarvester</data></node>
+    <node id="n_7506dae3c56f"><data key="label">tienda.rivas-fotografia.example</data><data key="type">host</data><data key="value">tienda.rivas-fotografia.example</data><data key="sources">theHarvester</data></node>
+    <node id="n_7b4d68395ea0"><data key="label">spotify.com (holehe)</data><data key="type">social_profile</data><data key="value">spotify.com:mateo.rivas@rivas-fotografia.example</data><data key="sources">holehe</data></node>
+    <node id="n_3577ecd60c70"><data key="label">strava.com (holehe)</data><data key="type">social_profile</data><data key="value">strava.com:mateo.rivas@rivas-fotografia.example</data><data key="sources">holehe</data></node>
+    <node id="n_9c274ee842c6"><data key="label">flickr.com (holehe)</data><data key="type">social_profile</data><data key="value">flickr.com:mateo.rivas@rivas-fotografia.example</data><data key="sources">holehe</data></node>
+    <node id="n_0e02f86a13a1"><data key="label">Syma</data><data key="type">organization</data><data key="value">Syma</data><data key="sources">phone</data></node>
+    <node id="n_30ed7216aa83"><data key="label">📍 Foto: 40.41300, -3.68100</data><data key="type">location</data><data key="value">40.413,-3.681</data><data key="sources">exif</data></node>
+    <node id="n_1ee3bcf918e8"><data key="label">📍 Última vez visto: Estación de Atocha, Madrid</data><data key="type">location</data><data key="value">40.4066,-3.6893</data><data key="sources">geocode</data></node>
+    <edge id="e0" source="n_fbe825c0f654" target="n_db43c03befd9"><data key="rel">coincidencia_interpol_amarilla</data></edge>
+    <edge id="e1" source="n_fbe825c0f654" target="n_e7b9fe295005"><data key="rel">mencion_en_noticia</data></edge>
+    <edge id="e2" source="n_fbe825c0f654" target="n_281cd389c4b5"><data key="rel">mencion_en_noticia</data></edge>
+    <edge id="e3" source="n_fbe825c0f654" target="n_2d23c1d6bc68"><data key="rel">mencion_en_noticia</data></edge>
+    <edge id="e4" source="n_fbe825c0f654" target="n_4257f65fa782"><data key="rel">email_posible</data></edge>
+    <edge id="e5" source="n_4257f65fa782" target="n_25a981980f1f"><data key="rel">expuesto_en</data></edge>
+    <edge id="e6" source="n_fbe825c0f654" target="n_6b04141147af"><data key="rel">posible_alias</data></edge>
+    <edge id="e7" source="n_6b04141147af" target="n_04e804afe550"><data key="rel">perfil_en</data></edge>
+    <edge id="e8" source="n_6b04141147af" target="n_a95f0e625c1f"><data key="rel">perfil_en</data></edge>
+    <edge id="e9" source="n_6b04141147af" target="n_637a8e940987"><data key="rel">perfil_en</data></edge>
+    <edge id="e10" source="n_6b04141147af" target="n_6acaff79c01b"><data key="rel">perfil_en</data></edge>
+    <edge id="e11" source="n_6b04141147af" target="n_59f838095f84"><data key="rel">perfil_en</data></edge>
+    <edge id="e12" source="n_fbe825c0f654" target="n_7cd725623517"><data key="rel">posible_alias</data></edge>
+    <edge id="e13" source="n_fbe825c0f654" target="n_53a1ad3d2512"><data key="rel">posible_alias</data></edge>
+    <edge id="e14" source="n_fbe825c0f654" target="n_f70a47f5fadc"><data key="rel">posible_alias</data></edge>
+    <edge id="e15" source="n_fbe825c0f654" target="n_4a7e312c4a22"><data key="rel">posible_alias</data></edge>
+    <edge id="e16" source="n_fbe825c0f654" target="n_21e786e29169"><data key="rel">posible_alias</data></edge>
+    <edge id="e17" source="n_fbe825c0f654" target="n_1518caf46c89"><data key="rel">posible_alias</data></edge>
+    <edge id="e18" source="n_fbe825c0f654" target="n_cd387126efb0"><data key="rel">posible_alias</data></edge>
+    <edge id="e19" source="n_fbe825c0f654" target="n_6b6d115db974"><data key="rel">posible_alias</data></edge>
+    <edge id="e20" source="n_fbe825c0f654" target="n_b5fbf95dd30e"><data key="rel">posible_alias</data></edge>
+    <edge id="e21" source="n_bf1483315106" target="n_25a981980f1f"><data key="rel">expuesto_en</data></edge>
+    <edge id="e22" source="n_bf1483315106" target="n_5e821ee242a4"><data key="rel">expuesto_en</data></edge>
+    <edge id="e23" source="n_bf1483315106" target="n_db527ecc595e"><data key="rel">dominio_de_email</data></edge>
+    <edge id="e24" source="n_db527ecc595e" target="n_de33d3e7726a"><data key="rel">registrado_por</data></edge>
+    <edge id="e25" source="n_db527ecc595e" target="n_78bb939b9e07"><data key="rel">whois_email</data></edge>
+    <edge id="e26" source="n_db527ecc595e" target="n_f14b615dd3b5"><data key="rel">resuelve_a</data></edge>
+    <edge id="e27" source="n_db527ecc595e" target="n_aae5175a9aa5"><data key="rel">mx</data></edge>
+    <edge id="e28" source="n_db527ecc595e" target="n_f9efdd514951"><data key="rel">ns</data></edge>
+    <edge id="e29" source="n_db527ecc595e" target="n_4daf8c0f40d2"><data key="rel">ns</data></edge>
+    <edge id="e30" source="n_db527ecc595e" target="n_6b922e5ed939"><data key="rel">email_en_dominio</data></edge>
+    <edge id="e31" source="n_db527ecc595e" target="n_bf1483315106"><data key="rel">email_en_dominio</data></edge>
+    <edge id="e32" source="n_db527ecc595e" target="n_a94b6a2002ad"><data key="rel">subdominio</data></edge>
+    <edge id="e33" source="n_db527ecc595e" target="n_7506dae3c56f"><data key="rel">subdominio</data></edge>
+    <edge id="e34" source="n_db527ecc595e" target="n_f14b615dd3b5"><data key="rel">ip_asociada</data></edge>
+    <edge id="e35" source="n_bf1483315106" target="n_7b4d68395ea0"><data key="rel">cuenta_en</data></edge>
+    <edge id="e36" source="n_bf1483315106" target="n_3577ecd60c70"><data key="rel">cuenta_en</data></edge>
+    <edge id="e37" source="n_bf1483315106" target="n_9c274ee842c6"><data key="rel">cuenta_en</data></edge>
+    <edge id="e38" source="n_bf1483315106" target="n_7cd725623517"><data key="rel">usa_alias</data></edge>
+    <edge id="e39" source="n_81c0706e4b6e" target="n_0e02f86a13a1"><data key="rel">operadora</data></edge>
+    <edge id="e40" source="n_d3efb1079893" target="n_30ed7216aa83"><data key="rel">tomada_en</data></edge>
+    <edge id="e41" source="n_fbe825c0f654" target="n_30ed7216aa83"><data key="rel">ubicacion_posible</data></edge>
+    <edge id="e42" source="n_fbe825c0f654" target="n_d3efb1079893"><data key="rel">foto_de</data></edge>
+    <edge id="e43" source="n_fbe825c0f654" target="n_1ee3bcf918e8"><data key="rel">ultima_vez_visto</data></edge>
+    <edge id="e44" source="n_bf1483315106" target="n_7cd725623517"><data key="rel">misma_persona?</data></edge>
+    <edge id="e45" source="n_4257f65fa782" target="n_53a1ad3d2512"><data key="rel">misma_persona?</data></edge>
+    <edge id="e46" source="n_fbe825c0f654" target="n_bf1483315106"><data key="rel">investigacion</data></edge>
+    <edge id="e47" source="n_fbe825c0f654" target="n_6b04141147af"><data key="rel">investigacion</data></edge>
+    <edge id="e48" source="n_fbe825c0f654" target="n_81c0706e4b6e"><data key="rel">investigacion</data></edge>
+    <edge id="e49" source="n_fbe825c0f654" target="n_db527ecc595e"><data key="rel">investigacion</data></edge>
+    <edge id="e50" source="n_fbe825c0f654" target="n_d3efb1079893"><data key="rel">investigacion</data></edge>
+    <edge id="e51" source="n_fbe825c0f654" target="n_2f07a85edbaf"><data key="rel">investigacion</data></edge>
+    <edge id="e52" source="n_81c0706e4b6e" target="n_5e821ee242a4"><data key="rel">posible_filtracion</data></edge>
+  </graph>
+</graphml>

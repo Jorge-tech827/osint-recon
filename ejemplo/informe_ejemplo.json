@@ -1,0 +1,1686 @@
+{
+  "targets": [
+    {
+      "tipo": "person",
+      "valor": "Mateo Rivas Olmedo"
+    },
+    {
+      "tipo": "email",
+      "valor": "mateo.rivas@rivas-fotografia.example"
+    },
+    {
+      "tipo": "username",
+      "valor": "mateorivas"
+    },
+    {
+      "tipo": "phone",
+      "valor": "+34 612 34 56 78"
+    },
+    {
+      "tipo": "domain",
+      "valor": "rivas-fotografia.example"
+    },
+    {
+      "tipo": "image",
+      "valor": "ejemplo/foto_ejemplo.jpg"
+    },
+    {
+      "tipo": "place",
+      "valor": "Estación de Atocha, Madrid"
+    }
+  ],
+  "started_at": "2026-11-01T09:39:22.663058+00:00",
+  "finished_at": "2026-11-01T09:39:29.188113+00:00",
+  "graph": {
+    "created_at": "2026-11-01T09:39:22.662889+00:00",
+    "stats": {
+      "person": 1,
+      "email": 4,
+      "username": 10,
+      "phone": 1,
+      "domain": 1,
+      "image": 1,
+      "place": 1,
+      "notice": 1,
+      "news": 3,
+      "breach": 2,
+      "social_profile": 8,
+      "organization": 2,
+      "ip": 1,
+      "host": 5,
+      "location": 2,
+      "_relaciones": 53,
+      "_entidades_total": 43
+    },
+    "entities": [
+      {
+        "etype": "person",
+        "value": "Mateo Rivas Olmedo",
+        "label": "Mateo Rivas Olmedo",
+        "attrs": {},
+        "sources": [
+          "input"
+        ],
+        "confidence": 0.6,
+        "id": "n_fbe825c0f654",
+        "key": "person:mateo rivas olmedo"
+      },
+      {
+        "etype": "email",
+        "value": "mateo.rivas@rivas-fotografia.example",
+        "label": "mateo.rivas@rivas-fotografia.example",
+        "attrs": {},
+        "sources": [
+          "input",
+          "theHarvester",
+          "holehe"
+        ],
+        "confidence": 0.99,
+        "id": "n_bf1483315106",
+        "key": "email:mateo.rivas@rivas-fotografia.example"
+      },
+      {
+        "etype": "username",
+        "value": "mateorivas",
+        "label": "mateorivas",
+        "attrs": {
+          "derivado_de": "Mateo Rivas Olmedo"
+        },
+        "sources": [
+          "input",
+          "usernames"
+        ],
+        "confidence": 0.7999999999999999,
+        "id": "n_6b04141147af",
+        "key": "username:mateorivas"
+      },
+      {
+        "etype": "phone",
+        "value": "+34 612 34 56 78",
+        "label": "+34 612 34 56 78",
+        "attrs": {
+          "valido": true,
+          "posible": true,
+          "e164": "+34612345678",
+          "internacional": "+34 612 34 56 78",
+          "nacional": "612 34 56 78",
+          "pais": "España",
+          "prefijo_pais": "+34",
+          "operadora": "Syma",
+          "tipo_linea": "móvil",
+          "zonas_horarias": [
+            "Atlantic/Canary",
+            "Europe/Madrid"
+          ]
+        },
+        "sources": [
+          "input",
+          "phone"
+        ],
+        "confidence": 0.9,
+        "id": "n_81c0706e4b6e",
+        "key": "phone:+34 612 34 56 78"
+      },
+      {
+        "etype": "domain",
+        "value": "rivas-fotografia.example",
+        "label": "rivas-fotografia.example",
+        "attrs": {
+          "registrador": "Registrador Ficticio S.L.",
+          "creado": "2019-03-11",
+          "expira": "2027-03-11",
+          "whois_org": "Rivas Fotografía (ficticio)",
+          "pais": "ES",
+          "dns": {
+            "A": [
+              "192.0.2.10"
+            ],
+            "MX": [
+              "10 mx1.rivas-fotografia.example."
+            ],
+            "NS": [
+              "ns1.dns-ficticio.example.",
+              "ns2.dns-ficticio.example."
+            ],
+            "TXT": [
+              "\"v=spf1 include:_spf.example ~all\""
+            ],
+            "SOA": [
+              "ns1.dns-ficticio.example. hostmaster.rivas-fotografia.example. 2026010101 7200 3600 1209600 3600"
+            ]
+          },
+          "http_status": 200,
+          "servidor": "nginx",
+          "cabeceras_seguridad": [
+            "Strict-Transport-Security",
+            "X-Content-Type-Options"
+          ],
+          "url_final": "https://rivas-fotografia.example"
+        },
+        "sources": [
+          "input",
+          "domain",
+          "theHarvester"
+        ],
+        "confidence": 0.99,
+        "id": "n_db527ecc595e",
+        "key": "domain:rivas-fotografia.example"
+      },
+      {
+        "etype": "image",
+        "value": "ejemplo/foto_ejemplo.jpg",
+        "label": "Foto: foto_ejemplo.jpg",
+        "attrs": {
+          "dispositivo": "Samsung Galaxy S23",
+          "fecha_foto": "2026:10:20 18:30:45",
+          "ruta": "ejemplo/foto_ejemplo.jpg",
+          "sha256": "4c61f3fbea72240c1cbe24190aabbd80b2179f5fa0fc31b805c6f8ed975011b1",
+          "paginas_subida": {
+            "Google Lens": "https://lens.google.com/",
+            "Yandex": "https://yandex.com/images/",
+            "Bing": "https://www.bing.com/visualsearch",
+            "TinEye": "https://tineye.com/"
+          }
+        },
+        "sources": [
+          "input",
+          "exif",
+          "reverse_image"
+        ],
+        "confidence": 0.6,
+        "id": "n_d3efb1079893",
+        "key": "image:ejemplo/foto_ejemplo.jpg"
+      },
+      {
+        "etype": "place",
+        "value": "Estación de Atocha, Madrid",
+        "label": "Estación de Atocha, Madrid",
+        "attrs": {},
+        "sources": [
+          "input"
+        ],
+        "confidence": 0.6,
+        "id": "n_2f07a85edbaf",
+        "key": "place:estación de atocha, madrid"
+      },
+      {
+        "etype": "notice",
+        "value": "interpol:yellow:2026/00001",
+        "label": "Interpol Yellow Notice: MATEO RIVAS OLMEDO",
+        "attrs": {
+          "fuente": "Interpol (público)",
+          "tipo_notificacion": "Yellow Notice",
+          "nombre": "MATEO RIVAS OLMEDO",
+          "fecha_nacimiento": "1992/04/16",
+          "nacionalidades": [
+            "ES"
+          ],
+          "entity_id": "2026/00001",
+          "enlace": "https://ws-public.interpol.int/notices/v1/yellow/2026-00001",
+          "aviso": "Coincidencia por nombre — verificar identidad (homónimos posibles)"
+        },
+        "sources": [
+          "interpol"
+        ],
+        "confidence": 0.3,
+        "id": "n_db43c03befd9",
+        "key": "notice:interpol:yellow:2026/00001"
+      },
+      {
+        "etype": "news",
+        "value": "https://news.example/articulo/familia-pide-ayuda",
+        "label": "La familia de Mateo Rivas pide ayuda para encontrarle - Diar…",
+        "attrs": {
+          "titulo": "La familia de Mateo Rivas pide ayuda para encontrarle - Diario de Ejemplo",
+          "medio": "Diario de Ejemplo",
+          "fecha": "Mon, 19 Oct 2026 09:15:00 GMT",
+          "url": "https://news.example/articulo/familia-pide-ayuda",
+          "aviso": "Mención por nombre — verificar que es la persona correcta"
+        },
+        "sources": [
+          "news"
+        ],
+        "confidence": 0.4,
+        "id": "n_e7b9fe295005",
+        "key": "news:https://news.example/articulo/familia-pide-ayuda"
+      },
+      {
+        "etype": "news",
+        "value": "https://news.example/articulo/batida-atocha",
+        "label": "Vecinos de Atocha organizan una batida de búsqueda - Noticia…",
+        "attrs": {
+          "titulo": "Vecinos de Atocha organizan una batida de búsqueda - Noticias Ficticias",
+          "medio": "Noticias Ficticias",
+          "fecha": "Thu, 22 Oct 2026 18:40:00 GMT",
+          "url": "https://news.example/articulo/batida-atocha",
+          "aviso": "Mención por nombre — verificar que es la persona correcta"
+        },
+        "sources": [
+          "news"
+        ],
+        "confidence": 0.4,
+        "id": "n_281cd389c4b5",
+        "key": "news:https://news.example/articulo/batida-atocha"
+      },
+      {
+        "etype": "news",
+        "value": "https://news.example/articulo/sin-pistas",
+        "label": "Siguen sin pistas sobre el paradero de Mateo Rivas - Crónica…",
+        "attrs": {
+          "titulo": "Siguen sin pistas sobre el paradero de Mateo Rivas - Crónica Demo",
+          "medio": "Crónica Demo",
+          "fecha": "Sat, 24 Oct 2026 08:00:00 GMT",
+          "url": "https://news.example/articulo/sin-pistas",
+          "aviso": "Mención por nombre — verificar que es la persona correcta"
+        },
+        "sources": [
+          "news"
+        ],
+        "confidence": 0.4,
+        "id": "n_2d23c1d6bc68",
+        "key": "news:https://news.example/articulo/sin-pistas"
+      },
+      {
+        "etype": "email",
+        "value": "mrivas@rivas-fotografia.example",
+        "label": "mrivas@rivas-fotografia.example",
+        "attrs": {
+          "origen": "permutación del nombre"
+        },
+        "sources": [
+          "permutations"
+        ],
+        "confidence": 0.7,
+        "id": "n_4257f65fa782",
+        "key": "email:mrivas@rivas-fotografia.example"
+      },
+      {
+        "etype": "breach",
+        "value": "ForoFotografiaDemo",
+        "label": "Brecha: ForoFotografiaDemo",
+        "attrs": {
+          "fuente_api": "XposedOrNot",
+          "dominio": "foro-foto.example",
+          "fecha": "2022",
+          "cuentas_afectadas": 48210,
+          "verificada": true,
+          "datos_expuestos": [
+            "Email addresses",
+            "Usernames",
+            "Passwords"
+          ],
+          "descripcion": "Brecha ficticia de un foro de fotografía (datos de ejemplo)."
+        },
+        "sources": [
+          "permutations",
+          "breaches_free"
+        ],
+        "confidence": 0.95,
+        "id": "n_25a981980f1f",
+        "key": "breach:forofotografiademo"
+      },
+      {
+        "etype": "social_profile",
+        "value": "https://keybase.io/mateorivas",
+        "label": "Keybase: mateorivas",
+        "attrs": {
+          "red": "Keybase",
+          "username": "mateorivas",
+          "url": "https://keybase.io/mateorivas"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.8,
+        "id": "n_04e804afe550",
+        "key": "social_profile:https://keybase.io/mateorivas"
+      },
+      {
+        "etype": "social_profile",
+        "value": "https://github.com/mateorivas",
+        "label": "GitHub: mateorivas",
+        "attrs": {
+          "red": "GitHub",
+          "username": "mateorivas",
+          "url": "https://github.com/mateorivas"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.8,
+        "id": "n_a95f0e625c1f",
+        "key": "social_profile:https://github.com/mateorivas"
+      },
+      {
+        "etype": "social_profile",
+        "value": "https://www.twitch.tv/mateorivas",
+        "label": "Twitch: mateorivas",
+        "attrs": {
+          "red": "Twitch",
+          "username": "mateorivas",
+          "url": "https://www.twitch.tv/mateorivas"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.8,
+        "id": "n_637a8e940987",
+        "key": "social_profile:https://www.twitch.tv/mateorivas"
+      },
+      {
+        "etype": "social_profile",
+        "value": "https://www.reddit.com/user/mateorivas/about.json",
+        "label": "Reddit: mateorivas",
+        "attrs": {
+          "red": "Reddit",
+          "username": "mateorivas",
+          "url": "https://www.reddit.com/user/mateorivas/about.json"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.8,
+        "id": "n_6acaff79c01b",
+        "key": "social_profile:https://www.reddit.com/user/mateorivas/about.json"
+      },
+      {
+        "etype": "social_profile",
+        "value": "https://www.chess.com/member/mateorivas",
+        "label": "Chess.com: mateorivas",
+        "attrs": {
+          "red": "Chess.com",
+          "username": "mateorivas",
+          "url": "https://www.chess.com/member/mateorivas"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.8,
+        "id": "n_59f838095f84",
+        "key": "social_profile:https://www.chess.com/member/mateorivas"
+      },
+      {
+        "etype": "username",
+        "value": "mateo.rivas",
+        "label": "mateo.rivas",
+        "attrs": {
+          "derivado_de": "Mateo Rivas Olmedo"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.5,
+        "id": "n_7cd725623517",
+        "key": "username:mateo.rivas"
+      },
+      {
+        "etype": "username",
+        "value": "mrivas",
+        "label": "mrivas",
+        "attrs": {
+          "derivado_de": "Mateo Rivas Olmedo"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.5,
+        "id": "n_53a1ad3d2512",
+        "key": "username:mrivas"
+      },
+      {
+        "etype": "username",
+        "value": "mateo_rivas",
+        "label": "mateo_rivas",
+        "attrs": {
+          "derivado_de": "Mateo Rivas Olmedo"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.5,
+        "id": "n_f70a47f5fadc",
+        "key": "username:mateo_rivas"
+      },
+      {
+        "etype": "username",
+        "value": "mateor",
+        "label": "mateor",
+        "attrs": {
+          "derivado_de": "Mateo Rivas Olmedo"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.5,
+        "id": "n_4a7e312c4a22",
+        "key": "username:mateor"
+      },
+      {
+        "etype": "username",
+        "value": "rivasmateo",
+        "label": "rivasmateo",
+        "attrs": {
+          "derivado_de": "Mateo Rivas Olmedo"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.5,
+        "id": "n_21e786e29169",
+        "key": "username:rivasmateo"
+      },
+      {
+        "etype": "username",
+        "value": "mateoolmedo",
+        "label": "mateoolmedo",
+        "attrs": {
+          "derivado_de": "Mateo Rivas Olmedo"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.5,
+        "id": "n_1518caf46c89",
+        "key": "username:mateoolmedo"
+      },
+      {
+        "etype": "username",
+        "value": "mateo.olmedo",
+        "label": "mateo.olmedo",
+        "attrs": {
+          "derivado_de": "Mateo Rivas Olmedo"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.5,
+        "id": "n_cd387126efb0",
+        "key": "username:mateo.olmedo"
+      },
+      {
+        "etype": "username",
+        "value": "molmedo",
+        "label": "molmedo",
+        "attrs": {
+          "derivado_de": "Mateo Rivas Olmedo"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.5,
+        "id": "n_6b6d115db974",
+        "key": "username:molmedo"
+      },
+      {
+        "etype": "username",
+        "value": "mrivaso",
+        "label": "mrivaso",
+        "attrs": {
+          "derivado_de": "Mateo Rivas Olmedo"
+        },
+        "sources": [
+          "usernames"
+        ],
+        "confidence": 0.5,
+        "id": "n_b5fbf95dd30e",
+        "key": "username:mrivaso"
+      },
+      {
+        "etype": "breach",
+        "value": "TiendaOnlineDemo",
+        "label": "Brecha: TiendaOnlineDemo",
+        "attrs": {
+          "fuente_api": "XposedOrNot",
+          "dominio": "tienda.example",
+          "fecha": "2020",
+          "cuentas_afectadas": 125300,
+          "verificada": true,
+          "datos_expuestos": [
+            "Email addresses",
+            "Phone numbers",
+            "Physical addresses"
+          ],
+          "descripcion": "Brecha ficticia de una tienda online (datos de ejemplo)."
+        },
+        "sources": [
+          "breaches_free"
+        ],
+        "confidence": 0.85,
+        "id": "n_5e821ee242a4",
+        "key": "breach:tiendaonlinedemo"
+      },
+      {
+        "etype": "organization",
+        "value": "Rivas Fotografía (ficticio)",
+        "label": "Rivas Fotografía (ficticio)",
+        "attrs": {},
+        "sources": [
+          "domain"
+        ],
+        "confidence": 0.5,
+        "id": "n_de33d3e7726a",
+        "key": "organization:rivas fotografía (ficticio)"
+      },
+      {
+        "etype": "email",
+        "value": "admin@rivas-fotografia.example",
+        "label": "admin@rivas-fotografia.example",
+        "attrs": {},
+        "sources": [
+          "domain"
+        ],
+        "confidence": 0.7,
+        "id": "n_78bb939b9e07",
+        "key": "email:admin@rivas-fotografia.example"
+      },
+      {
+        "etype": "ip",
+        "value": "192.0.2.10",
+        "label": "192.0.2.10",
+        "attrs": {},
+        "sources": [
+          "domain",
+          "theHarvester"
+        ],
+        "confidence": 0.7999999999999999,
+        "id": "n_f14b615dd3b5",
+        "key": "ip:192.0.2.10"
+      },
+      {
+        "etype": "host",
+        "value": "mx1.rivas-fotografia.example",
+        "label": "mx1.rivas-fotografia.example",
+        "attrs": {
+          "rol": "mx"
+        },
+        "sources": [
+          "domain"
+        ],
+        "confidence": 0.5,
+        "id": "n_aae5175a9aa5",
+        "key": "host:mx1.rivas-fotografia.example"
+      },
+      {
+        "etype": "host",
+        "value": "ns1.dns-ficticio.example",
+        "label": "ns1.dns-ficticio.example",
+        "attrs": {
+          "rol": "ns"
+        },
+        "sources": [
+          "domain"
+        ],
+        "confidence": 0.5,
+        "id": "n_f9efdd514951",
+        "key": "host:ns1.dns-ficticio.example"
+      },
+      {
+        "etype": "host",
+        "value": "ns2.dns-ficticio.example",
+        "label": "ns2.dns-ficticio.example",
+        "attrs": {
+          "rol": "ns"
+        },
+        "sources": [
+          "domain"
+        ],
+        "confidence": 0.5,
+        "id": "n_4daf8c0f40d2",
+        "key": "host:ns2.dns-ficticio.example"
+      },
+      {
+        "etype": "email",
+        "value": "contacto@rivas-fotografia.example",
+        "label": "contacto@rivas-fotografia.example",
+        "attrs": {},
+        "sources": [
+          "theHarvester"
+        ],
+        "confidence": 0.5,
+        "id": "n_6b922e5ed939",
+        "key": "email:contacto@rivas-fotografia.example"
+      },
+      {
+        "etype": "host",
+        "value": "www.rivas-fotografia.example",
+        "label": "www.rivas-fotografia.example",
+        "attrs": {},
+        "sources": [
+          "theHarvester"
+        ],
+        "confidence": 0.5,
+        "id": "n_a94b6a2002ad",
+        "key": "host:www.rivas-fotografia.example"
+      },
+      {
+        "etype": "host",
+        "value": "tienda.rivas-fotografia.example",
+        "label": "tienda.rivas-fotografia.example",
+        "attrs": {},
+        "sources": [
+          "theHarvester"
+        ],
+        "confidence": 0.5,
+        "id": "n_7506dae3c56f",
+        "key": "host:tienda.rivas-fotografia.example"
+      },
+      {
+        "etype": "social_profile",
+        "value": "spotify.com:mateo.rivas@rivas-fotografia.example",
+        "label": "spotify.com (holehe)",
+        "attrs": {
+          "red": "spotify.com",
+          "fuente": "holehe",
+          "url": "https://spotify.com",
+          "pista_recuperacion": ""
+        },
+        "sources": [
+          "holehe"
+        ],
+        "confidence": 0.5,
+        "id": "n_7b4d68395ea0",
+        "key": "social_profile:spotify.com:mateo.rivas@rivas-fotografia.example"
+      },
+      {
+        "etype": "social_profile",
+        "value": "strava.com:mateo.rivas@rivas-fotografia.example",
+        "label": "strava.com (holehe)",
+        "attrs": {
+          "red": "strava.com",
+          "fuente": "holehe",
+          "url": "https://strava.com",
+          "pista_recuperacion": "mat****@gmail.com"
+        },
+        "sources": [
+          "holehe"
+        ],
+        "confidence": 0.5,
+        "id": "n_3577ecd60c70",
+        "key": "social_profile:strava.com:mateo.rivas@rivas-fotografia.example"
+      },
+      {
+        "etype": "social_profile",
+        "value": "flickr.com:mateo.rivas@rivas-fotografia.example",
+        "label": "flickr.com (holehe)",
+        "attrs": {
+          "red": "flickr.com",
+          "fuente": "holehe",
+          "url": "https://flickr.com",
+          "pista_recuperacion": ""
+        },
+        "sources": [
+          "holehe"
+        ],
+        "confidence": 0.5,
+        "id": "n_9c274ee842c6",
+        "key": "social_profile:flickr.com:mateo.rivas@rivas-fotografia.example"
+      },
+      {
+        "etype": "organization",
+        "value": "Syma",
+        "label": "Syma",
+        "attrs": {
+          "rol": "operadora telefónica"
+        },
+        "sources": [
+          "phone"
+        ],
+        "confidence": 0.5,
+        "id": "n_0e02f86a13a1",
+        "key": "organization:syma"
+      },
+      {
+        "etype": "location",
+        "value": "40.413,-3.681",
+        "label": "📍 Foto: 40.41300, -3.68100",
+        "attrs": {
+          "lat": 40.413,
+          "lon": -3.681,
+          "origen": "EXIF de foto",
+          "fecha": "2026:10:20 18:30:45",
+          "mapa": "https://www.openstreetmap.org/?mlat=40.413&mlon=-3.681#map=16/40.413/-3.681"
+        },
+        "sources": [
+          "exif"
+        ],
+        "confidence": 0.85,
+        "id": "n_30ed7216aa83",
+        "key": "location:40.413,-3.681"
+      },
+      {
+        "etype": "location",
+        "value": "40.4066,-3.6893",
+        "label": "📍 Última vez visto: Estación de Atocha, Madrid",
+        "attrs": {
+          "lat": 40.4066,
+          "lon": -3.6893,
+          "origen": "Última vez visto",
+          "lugar": "Estación de Atocha, Madrid",
+          "direccion": "Estación de Atocha, Madrid, España",
+          "fecha": "2026-10-18",
+          "mapa": "https://www.openstreetmap.org/?mlat=40.4066&mlon=-3.6893#map=15/40.4066/-3.6893"
+        },
+        "sources": [
+          "geocode"
+        ],
+        "confidence": 0.7,
+        "id": "n_1ee3bcf918e8",
+        "key": "location:40.4066,-3.6893"
+      }
+    ],
+    "relations": [
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_db43c03befd9",
+        "label": "coincidencia_interpol_amarilla",
+        "source": "interpol",
+        "attrs": {
+          "verificar": true
+        }
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_e7b9fe295005",
+        "label": "mencion_en_noticia",
+        "source": "news",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_281cd389c4b5",
+        "label": "mencion_en_noticia",
+        "source": "news",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_2d23c1d6bc68",
+        "label": "mencion_en_noticia",
+        "source": "news",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_4257f65fa782",
+        "label": "email_posible",
+        "source": "permutations",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_4257f65fa782",
+        "dst_id": "n_25a981980f1f",
+        "label": "expuesto_en",
+        "source": "permutations",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_6b04141147af",
+        "label": "posible_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_6b04141147af",
+        "dst_id": "n_04e804afe550",
+        "label": "perfil_en",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_6b04141147af",
+        "dst_id": "n_a95f0e625c1f",
+        "label": "perfil_en",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_6b04141147af",
+        "dst_id": "n_637a8e940987",
+        "label": "perfil_en",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_6b04141147af",
+        "dst_id": "n_6acaff79c01b",
+        "label": "perfil_en",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_6b04141147af",
+        "dst_id": "n_59f838095f84",
+        "label": "perfil_en",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_7cd725623517",
+        "label": "posible_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_53a1ad3d2512",
+        "label": "posible_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_f70a47f5fadc",
+        "label": "posible_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_4a7e312c4a22",
+        "label": "posible_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_21e786e29169",
+        "label": "posible_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_1518caf46c89",
+        "label": "posible_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_cd387126efb0",
+        "label": "posible_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_6b6d115db974",
+        "label": "posible_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_b5fbf95dd30e",
+        "label": "posible_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_bf1483315106",
+        "dst_id": "n_25a981980f1f",
+        "label": "expuesto_en",
+        "source": "breaches_free",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_bf1483315106",
+        "dst_id": "n_5e821ee242a4",
+        "label": "expuesto_en",
+        "source": "breaches_free",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_bf1483315106",
+        "dst_id": "n_db527ecc595e",
+        "label": "dominio_de_email",
+        "source": "domain",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_de33d3e7726a",
+        "label": "registrado_por",
+        "source": "domain",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_78bb939b9e07",
+        "label": "whois_email",
+        "source": "domain",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_f14b615dd3b5",
+        "label": "resuelve_a",
+        "source": "domain",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_aae5175a9aa5",
+        "label": "mx",
+        "source": "domain",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_f9efdd514951",
+        "label": "ns",
+        "source": "domain",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_4daf8c0f40d2",
+        "label": "ns",
+        "source": "domain",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_6b922e5ed939",
+        "label": "email_en_dominio",
+        "source": "theHarvester",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_bf1483315106",
+        "label": "email_en_dominio",
+        "source": "theHarvester",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_a94b6a2002ad",
+        "label": "subdominio",
+        "source": "theHarvester",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_7506dae3c56f",
+        "label": "subdominio",
+        "source": "theHarvester",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_db527ecc595e",
+        "dst_id": "n_f14b615dd3b5",
+        "label": "ip_asociada",
+        "source": "theHarvester",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_bf1483315106",
+        "dst_id": "n_7b4d68395ea0",
+        "label": "cuenta_en",
+        "source": "holehe",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_bf1483315106",
+        "dst_id": "n_3577ecd60c70",
+        "label": "cuenta_en",
+        "source": "holehe",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_bf1483315106",
+        "dst_id": "n_9c274ee842c6",
+        "label": "cuenta_en",
+        "source": "holehe",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_bf1483315106",
+        "dst_id": "n_7cd725623517",
+        "label": "usa_alias",
+        "source": "usernames",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_81c0706e4b6e",
+        "dst_id": "n_0e02f86a13a1",
+        "label": "operadora",
+        "source": "phone",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_d3efb1079893",
+        "dst_id": "n_30ed7216aa83",
+        "label": "tomada_en",
+        "source": "exif",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_30ed7216aa83",
+        "label": "ubicacion_posible",
+        "source": "exif",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_d3efb1079893",
+        "label": "foto_de",
+        "source": "reverse_image",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_1ee3bcf918e8",
+        "label": "ultima_vez_visto",
+        "source": "geocode",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_bf1483315106",
+        "dst_id": "n_7cd725623517",
+        "label": "misma_persona?",
+        "source": "correlacion",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_4257f65fa782",
+        "dst_id": "n_53a1ad3d2512",
+        "label": "misma_persona?",
+        "source": "correlacion",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_bf1483315106",
+        "label": "investigacion",
+        "source": "correlacion",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_6b04141147af",
+        "label": "investigacion",
+        "source": "correlacion",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_81c0706e4b6e",
+        "label": "investigacion",
+        "source": "correlacion",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_db527ecc595e",
+        "label": "investigacion",
+        "source": "correlacion",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_d3efb1079893",
+        "label": "investigacion",
+        "source": "correlacion",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_fbe825c0f654",
+        "dst_id": "n_2f07a85edbaf",
+        "label": "investigacion",
+        "source": "correlacion",
+        "attrs": {}
+      },
+      {
+        "src_id": "n_81c0706e4b6e",
+        "dst_id": "n_5e821ee242a4",
+        "label": "posible_filtracion",
+        "source": "correlacion",
+        "attrs": {
+          "motivo": "la brecha expuso números de teléfono"
+        }
+      }
+    ]
+  },
+  "results": [
+    {
+      "module": "interpol",
+      "target": "Mateo Rivas Olmedo",
+      "status": "ok",
+      "message": "1 coincidencia(s) por NOMBRE en Interpol — verificar identidad (posibles homónimos).",
+      "findings": [
+        {
+          "tipo": "Yellow Notice",
+          "nombre": "MATEO RIVAS OLMEDO",
+          "fecha_nacimiento": "1992/04/16",
+          "nacionalidades": "ES",
+          "enlace": "https://ws-public.interpol.int/notices/v1/yellow/2026-00001"
+        }
+      ],
+      "entities_added": 1,
+      "relations_added": 1,
+      "elapsed_s": 0.8,
+      "meta": {
+        "apellidos_probados": [
+          "Olmedo",
+          "Rivas Olmedo"
+        ],
+        "errores": []
+      }
+    },
+    {
+      "module": "missing_db",
+      "target": "Mateo Rivas Olmedo",
+      "status": "ok",
+      "message": "5 bases de desaparecidos enlazadas para «Mateo Rivas Olmedo». Interpol se consulta aparte (módulo interpol).",
+      "findings": [
+        {
+          "base": "SOS Desaparecidos (ES)",
+          "ambito": "España",
+          "buscar_en": "https://sosdesaparecidos.es/?s=Mateo+Rivas+Olmedo",
+          "nota": "búsqueda directa del nombre"
+        },
+        {
+          "base": "CNDES / C. Nacional de Desaparecidos (ES)",
+          "ambito": "España",
+          "buscar_en": "https://cndes-web.ses.mir.es/publico/Desaparecidos/",
+          "nota": "abrir y buscar a mano"
+        },
+        {
+          "base": "NamUs (US)",
+          "ambito": "EE.UU.",
+          "buscar_en": "https://www.namus.gov/MissingPersons/Search",
+          "nota": "abrir y buscar a mano"
+        },
+        {
+          "base": "NCMEC (US, menores)",
+          "ambito": "EE.UU.",
+          "buscar_en": "https://www.missingkids.org/gethelpnow/search",
+          "nota": "abrir y buscar a mano"
+        },
+        {
+          "base": "Amber Alert Europe",
+          "ambito": "Europa",
+          "buscar_en": "https://www.amberalert.eu/?s=Mateo+Rivas+Olmedo",
+          "nota": "búsqueda directa del nombre"
+        }
+      ],
+      "entities_added": 0,
+      "relations_added": 0,
+      "elapsed_s": 0.0,
+      "meta": {
+        "fuentes": [
+          "SOS Desaparecidos (ES)",
+          "CNDES / C. Nacional de Desaparecidos (ES)",
+          "NamUs (US)",
+          "NCMEC (US, menores)",
+          "Amber Alert Europe"
+        ]
+      }
+    },
+    {
+      "module": "news",
+      "target": "Mateo Rivas Olmedo",
+      "status": "ok",
+      "message": "3 noticia(s) encontradas para «Mateo Rivas Olmedo» — verificar que son la misma persona.",
+      "findings": [
+        {
+          "titular": "La familia de Mateo Rivas pide ayuda para encontrarle - Diario de Ejemplo",
+          "medio": "Diario de Ejemplo",
+          "fecha": "Mon, 19 Oct 2026 09:15:00 GMT",
+          "url": "https://news.example/articulo/familia-pide-ayuda"
+        },
+        {
+          "titular": "Vecinos de Atocha organizan una batida de búsqueda - Noticias Ficticias",
+          "medio": "Noticias Ficticias",
+          "fecha": "Thu, 22 Oct 2026 18:40:00 GMT",
+          "url": "https://news.example/articulo/batida-atocha"
+        },
+        {
+          "titular": "Siguen sin pistas sobre el paradero de Mateo Rivas - Crónica Demo",
+          "medio": "Crónica Demo",
+          "fecha": "Sat, 24 Oct 2026 08:00:00 GMT",
+          "url": "https://news.example/articulo/sin-pistas"
+        }
+      ],
+      "entities_added": 3,
+      "relations_added": 3,
+      "elapsed_s": 0.0,
+      "meta": {
+        "total_rss": 3,
+        "idioma": "es",
+        "pais": "ES"
+      }
+    },
+    {
+      "module": "permutations",
+      "target": "Mateo Rivas Olmedo",
+      "status": "ok",
+      "message": "11 emails comprobados, 1 con brechas (= emails reales probables).",
+      "findings": [
+        {
+          "email": "mrivas@rivas-fotografia.example",
+          "brechas": 1
+        }
+      ],
+      "entities_added": 2,
+      "relations_added": 2,
+      "elapsed_s": 5.0,
+      "meta": {
+        "comprobados": 11,
+        "encontrados": 1,
+        "errores": 0
+      }
+    },
+    {
+      "module": "usernames",
+      "target": "Mateo Rivas Olmedo",
+      "status": "ok",
+      "message": "5 perfil(es) encontrados; 0 comprobaciones ambiguas.",
+      "findings": [
+        {
+          "red": "Keybase",
+          "url": "https://keybase.io/mateorivas",
+          "estado": "encontrado"
+        },
+        {
+          "red": "GitHub",
+          "url": "https://github.com/mateorivas",
+          "estado": "encontrado"
+        },
+        {
+          "red": "Twitch",
+          "url": "https://www.twitch.tv/mateorivas",
+          "estado": "encontrado"
+        },
+        {
+          "red": "Reddit",
+          "url": "https://www.reddit.com/user/mateorivas/about.json",
+          "estado": "encontrado"
+        },
+        {
+          "red": "Chess.com",
+          "url": "https://www.chess.com/member/mateorivas",
+          "estado": "encontrado"
+        }
+      ],
+      "entities_added": 14,
+      "relations_added": 15,
+      "elapsed_s": 0.03,
+      "meta": {
+        "sitios_comprobados": 33,
+        "usernames": [
+          "mateorivas",
+          "mateo.rivas",
+          "mrivas",
+          "mateo_rivas",
+          "mateor",
+          "rivasmateo",
+          "mateoolmedo",
+          "mateo.olmedo",
+          "molmedo",
+          "mrivaso"
+        ]
+      }
+    },
+    {
+      "module": "breaches",
+      "target": "mateo.rivas@rivas-fotografia.example",
+      "status": "skipped",
+      "message": "No hay clave HIBP configurada. Añade tu clave en config.ini ([api_keys] hibp=...). Consíguela en https://haveibeenpwned.com/API/Key",
+      "findings": [],
+      "entities_added": 0,
+      "relations_added": 0,
+      "elapsed_s": 0.0,
+      "meta": {}
+    },
+    {
+      "module": "breaches_free",
+      "target": "mateo.rivas@rivas-fotografia.example",
+      "status": "ok",
+      "message": "2 brecha(s) encontradas (XposedOrNot, gratis).",
+      "findings": [
+        {
+          "brecha": "ForoFotografiaDemo",
+          "fecha": "2022",
+          "datos_expuestos": [
+            "Email addresses",
+            "Usernames",
+            "Passwords"
+          ]
+        },
+        {
+          "brecha": "TiendaOnlineDemo",
+          "fecha": "2020",
+          "datos_expuestos": [
+            "Email addresses",
+            "Phone numbers",
+            "Physical addresses"
+          ]
+        }
+      ],
+      "entities_added": 1,
+      "relations_added": 2,
+      "elapsed_s": 0.6,
+      "meta": {
+        "con_detalle": 2
+      }
+    },
+    {
+      "module": "domain",
+      "target": "mateo.rivas@rivas-fotografia.example",
+      "status": "ok",
+      "message": "Dominio rivas-fotografia.example analizado (WHOIS/DNS/HTTP).",
+      "findings": [
+        {
+          "tipo": "whois",
+          "registrador": "Registrador Ficticio S.L.",
+          "creado": "2019-03-11",
+          "expira": "2027-03-11"
+        },
+        {
+          "tipo": "whois_email",
+          "email": "admin@rivas-fotografia.example"
+        },
+        {
+          "tipo": "dns",
+          "registros": {
+            "A": [
+              "192.0.2.10"
+            ],
+            "MX": [
+              "10 mx1.rivas-fotografia.example."
+            ],
+            "NS": [
+              "ns1.dns-ficticio.example.",
+              "ns2.dns-ficticio.example."
+            ],
+            "TXT": [
+              "\"v=spf1 include:_spf.example ~all\""
+            ],
+            "SOA": [
+              "ns1.dns-ficticio.example. hostmaster.rivas-fotografia.example. 2026010101 7200 3600 1209600 3600"
+            ]
+          }
+        },
+        {
+          "tipo": "http",
+          "status": 200,
+          "servidor": "nginx",
+          "cabeceras_seguridad": [
+            "Strict-Transport-Security",
+            "X-Content-Type-Options"
+          ]
+        }
+      ],
+      "entities_added": 6,
+      "relations_added": 7,
+      "elapsed_s": 0.0,
+      "meta": {}
+    },
+    {
+      "module": "external_tools",
+      "target": "mateo.rivas@rivas-fotografia.example",
+      "status": "ok",
+      "message": "theHarvester: ok — theHarvester: 2 emails, 2 hosts, 1 IPs. | holehe: ok — holehe: 3 servicio(s) con cuenta asociada.",
+      "findings": [
+        {
+          "herramienta": "theHarvester",
+          "emails": 2,
+          "hosts": 2,
+          "ips": 1
+        },
+        {
+          "herramienta": "holehe",
+          "servicios": [
+            "spotify.com",
+            "strava.com",
+            "flickr.com"
+          ]
+        }
+      ],
+      "entities_added": 6,
+      "relations_added": 8,
+      "elapsed_s": 0.04,
+      "meta": {
+        "detalle": [
+          "theHarvester: ok — theHarvester: 2 emails, 2 hosts, 1 IPs.",
+          "holehe: ok — holehe: 3 servicio(s) con cuenta asociada."
+        ]
+      }
+    },
+    {
+      "module": "usernames",
+      "target": "mateo.rivas@rivas-fotografia.example",
+      "status": "ok",
+      "message": "0 perfil(es) encontrados; 0 comprobaciones ambiguas.",
+      "findings": [],
+      "entities_added": 0,
+      "relations_added": 1,
+      "elapsed_s": 0.0,
+      "meta": {
+        "sitios_comprobados": 33,
+        "usernames": [
+          "mateo.rivas"
+        ]
+      }
+    },
+    {
+      "module": "usernames",
+      "target": "mateorivas",
+      "status": "ok",
+      "message": "5 perfil(es) encontrados; 0 comprobaciones ambiguas.",
+      "findings": [
+        {
+          "red": "GitHub",
+          "url": "https://github.com/mateorivas",
+          "estado": "encontrado"
+        },
+        {
+          "red": "Twitch",
+          "url": "https://www.twitch.tv/mateorivas",
+          "estado": "encontrado"
+        },
+        {
+          "red": "Reddit",
+          "url": "https://www.reddit.com/user/mateorivas/about.json",
+          "estado": "encontrado"
+        },
+        {
+          "red": "Keybase",
+          "url": "https://keybase.io/mateorivas",
+          "estado": "encontrado"
+        },
+        {
+          "red": "Chess.com",
+          "url": "https://www.chess.com/member/mateorivas",
+          "estado": "encontrado"
+        }
+      ],
+      "entities_added": 0,
+      "relations_added": 0,
+      "elapsed_s": 0.0,
+      "meta": {
+        "sitios_comprobados": 33,
+        "usernames": [
+          "mateorivas"
+        ]
+      }
+    },
+    {
+      "module": "phone",
+      "target": "+34 612 34 56 78",
+      "status": "ok",
+      "message": "España · móvil · Syma · +34612345678",
+      "findings": [
+        {
+          "valido": true,
+          "pais": "España",
+          "operadora": "Syma",
+          "tipo_linea": "móvil",
+          "zonas_horarias": "Atlantic/Canary, Europe/Madrid",
+          "e164": "+34612345678"
+        }
+      ],
+      "entities_added": 1,
+      "relations_added": 1,
+      "elapsed_s": 0.0,
+      "meta": {
+        "zonas_horarias": [
+          "Atlantic/Canary",
+          "Europe/Madrid"
+        ]
+      }
+    },
+    {
+      "module": "domain",
+      "target": "rivas-fotografia.example",
+      "status": "ok",
+      "message": "Dominio rivas-fotografia.example analizado (WHOIS/DNS/HTTP).",
+      "findings": [
+        {
+          "tipo": "whois",
+          "registrador": "Registrador Ficticio S.L.",
+          "creado": "2019-03-11",
+          "expira": "2027-03-11"
+        },
+        {
+          "tipo": "whois_email",
+          "email": "admin@rivas-fotografia.example"
+        },
+        {
+          "tipo": "dns",
+          "registros": {
+            "A": [
+              "192.0.2.10"
+            ],
+            "MX": [
+              "10 mx1.rivas-fotografia.example."
+            ],
+            "NS": [
+              "ns1.dns-ficticio.example.",
+              "ns2.dns-ficticio.example."
+            ],
+            "TXT": [
+              "\"v=spf1 include:_spf.example ~all\""
+            ],
+            "SOA": [
+              "ns1.dns-ficticio.example. hostmaster.rivas-fotografia.example. 2026010101 7200 3600 1209600 3600"
+            ]
+          }
+        },
+        {
+          "tipo": "http",
+          "status": 200,
+          "servidor": "nginx",
+          "cabeceras_seguridad": [
+            "Strict-Transport-Security",
+            "X-Content-Type-Options"
+          ]
+        }
+      ],
+      "entities_added": 0,
+      "relations_added": 0,
+      "elapsed_s": 0.0,
+      "meta": {}
+    },
+    {
+      "module": "external_tools",
+      "target": "rivas-fotografia.example",
+      "status": "ok",
+      "message": "theHarvester: ok — theHarvester: 2 emails, 2 hosts, 1 IPs.",
+      "findings": [
+        {
+          "herramienta": "theHarvester",
+          "emails": 2,
+          "hosts": 2,
+          "ips": 1
+        }
+      ],
+      "entities_added": 0,
+      "relations_added": 0,
+      "elapsed_s": 0.03,
+      "meta": {
+        "detalle": [
+          "theHarvester: ok — theHarvester: 2 emails, 2 hosts, 1 IPs."
+        ]
+      }
+    },
+    {
+      "module": "exif",
+      "target": "ejemplo/foto_ejemplo.jpg",
+      "status": "ok",
+      "message": "EXIF con GPS: 40.413, -3.681 · 2026:10:20 18:30:45",
+      "findings": [
+        {
+          "dispositivo": "Samsung Galaxy S23",
+          "fecha_foto": "2026:10:20 18:30:45",
+          "software": "(no disponible)"
+        },
+        {
+          "GPS": "40.413, -3.681",
+          "mapa": "https://www.openstreetmap.org/?mlat=40.413&mlon=-3.681#map=16/40.413/-3.681"
+        }
+      ],
+      "entities_added": 1,
+      "relations_added": 2,
+      "elapsed_s": 0.0,
+      "meta": {
+        "gps": [
+          40.413,
+          -3.681
+        ]
+      }
+    },
+    {
+      "module": "reverse_image",
+      "target": "ejemplo/foto_ejemplo.jpg",
+      "status": "ok",
+      "message": "Fichero local (SHA-256 4c61f3fbea72240c…). Súbelo manualmente a los motores enlazados (sin URL pública no se puede enlazar la búsqueda directa).",
+      "findings": [
+        {
+          "motor": "Google Lens",
+          "subir_en": "https://lens.google.com/"
+        },
+        {
+          "motor": "Yandex",
+          "subir_en": "https://yandex.com/images/"
+        },
+        {
+          "motor": "Bing",
+          "subir_en": "https://www.bing.com/visualsearch"
+        },
+        {
+          "motor": "TinEye",
+          "subir_en": "https://tineye.com/"
+        }
+      ],
+      "entities_added": 0,
+      "relations_added": 1,
+      "elapsed_s": 0.0,
+      "meta": {}
+    },
+    {
+      "module": "geocode",
+      "target": "Estación de Atocha, Madrid",
+      "status": "ok",
+      "message": "«Estación de Atocha, Madrid» → 40.4066, -3.6893",
+      "findings": [
+        {
+          "lugar": "Estación de Atocha, Madrid",
+          "coordenadas": "40.4066, -3.6893",
+          "direccion": "Estación de Atocha, Madrid, España",
+          "fecha": "2026-10-18"
+        }
+      ],
+      "entities_added": 1,
+      "relations_added": 1,
+      "elapsed_s": 0.0,
+      "meta": {}
+    }
+  ]
+}
