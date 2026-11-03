@@ -36,7 +36,7 @@ desaparecidas (EXIF, Interpol, bases de desaparecidos).
 ### En CachyOS (o Arch Linux)
 
 ```bash
-git clone https://github.com/DieBermejo/osint-recon.git
+git clone https://github.com/Jorge-tech827/osint-recon/
 cd osint-recon
 bash setup.sh
 ```
@@ -63,7 +63,7 @@ y, opcionalmente, **Chromium o Chrome** para el PDF.
 **Linux y macOS**
 
 ```bash
-git clone https://github.com/DieBermejo/osint-recon.git
+git clone https://github.com/Jorge-tech827/osint-recon/
 cd osint-recon
 python3 -m venv venv
 source venv/bin/activate
@@ -73,7 +73,7 @@ pip install -r requirements.txt
 **Windows (PowerShell)**
 
 ```powershell
-git clone https://github.com/DieBermejo/osint-recon.git
+git clone https://github.com/Jorge-tech827/osint-recon/
 cd osint-recon
 python -m venv venv
 venv\Scripts\activate
